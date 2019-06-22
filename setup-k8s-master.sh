@@ -84,6 +84,3 @@ yum -y install kubelet kubeadm kubectl --disableexcludes=kubernetes
 systemctl  restart kubelet
 # run kubelet as daemon.
 systemctl enable --now kubelet
-
-# adding current user (non root user) to docker group.
-# sudo usermod -a -G docker $USER
