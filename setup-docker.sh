@@ -37,8 +37,10 @@ mkdir -p /etc/systemd/system/docker.service.d
 # reloading system daemons.
 systemctl daemon-reload
 
-# restarting docker.
+# (re)starting docker.
 systemctl restart docker
+# run docker as daemon.
+systemctl enable --now docker
 
 # adding current user (non root user) to docker group.
 # note: reboot required.
