@@ -84,3 +84,6 @@ yum -y install kubelet kubeadm kubectl --disableexcludes=kubernetes
 systemctl  restart kubelet
 # run kubelet as daemon.
 systemctl enable --now kubelet
+
+# initializing kubernetes control-plane node.
+kubeadm init
