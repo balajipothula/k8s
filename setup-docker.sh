@@ -39,3 +39,7 @@ systemctl daemon-reload
 
 # restarting docker.
 systemctl restart docker
+
+# adding current user (non root user) to docker group.
+# note: reboot required.
+# sudo usermod -a -G docker $USER
