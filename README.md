@@ -38,24 +38,8 @@ refer: setup-k8s-kubectl-redhat.sh
 
 ===============================================================
 
-step-7: get nodes information as non-sudoer
+step-7: run setup-k8s-admin-dashboard-redhat.sh as non-sudoer
 
-$ kubectl get nodes
-
-===============================================================
-
-step-8: get pods namespace information as non-sudoer
-
-$ kubectl get pods --all-namespaces
+refer: setup-k8s-admin-dashboard-redhat.sh
 
 ===============================================================
-
-
-
-
-
-
-
-
-
-
