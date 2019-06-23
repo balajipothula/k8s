@@ -2,9 +2,9 @@
 
 
 step-1: set hostname.
+
 $ hostnamectl set-hostname 'k8s-master'
-
-
+=======================================
 step-2: execute bash.
 
 $ exec bash
@@ -23,3 +23,4 @@ refer: setup-docker-redhat.sh file.
 step-5: run setup-k8s-master-redhat.sh
 
 refer: setup-k8s-master-redhat.sh file.
+=======================================
