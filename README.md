@@ -2,7 +2,7 @@
 
 ===============================================================
 
-step-1: $ hostnamectl set-hostname 'k8s-master' (set hostname)
+step-1: $ sudo hostnamectl set-hostname 'k8s-master' (set hostname)
 
 ===============================================================
 
