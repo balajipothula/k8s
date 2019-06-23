@@ -2,7 +2,6 @@
 
 
 step-1: set hostname.
-
 $ hostnamectl set-hostname 'k8s-master'
 
 
