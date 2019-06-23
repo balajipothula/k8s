@@ -1,0 +1,7 @@
+127.0.1.1 k8s-master
+127.0.0.1 localhost
+127.0.0.1 k8s.master
+10.0.0.8  k8s-minion0
+10.0.0.8  k8s.minion0
+10.0.0.9  k8s-minion1
+10.0.0.9  k8s.minion1
