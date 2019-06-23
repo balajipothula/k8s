@@ -62,7 +62,7 @@ exclude=kube*
 EOF
 
 # installing kubernetes. 
-yum -y install kubelet kubeadm kubectl --disableexcludes=kubernetes
+yum -y install kubeadm kubernetes-cni kubelet kubectl --disableexcludes=kubernetes
 
 # (re)starting kubelet.
 systemctl restart kubelet
