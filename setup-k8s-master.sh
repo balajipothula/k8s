@@ -15,9 +15,10 @@
 # temporarily until the machine is rebooted.
 setenforce 0
 
-# not loading selinux policy. 
-# no selinux policy is loaded.
-sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
+# setting selinux in permissive mode,
+# i.e switching off selinux enforcement
+# permanently (rebooted required).
+sed -i --follow-symlinks 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 
 # installing firewall management tool. 
 yum -y install firewalld
