@@ -20,31 +20,31 @@ refer: k8s-master-hosts file.
 
 ===============================================================
 
-step-4: run setup-docker-redhat.sh with sudo privilege
+step-4: run setup-docker-redhat.sh as sudoer
 
 refer: setup-docker-redhat.sh file.
 
 ===============================================================
 
-step-5: run setup-k8s-master-redhat.sh with sudo privilege
+step-5: run setup-k8s-master-redhat.sh as sudoer
 
 refer: setup-k8s-master-redhat.sh file.
 
 ===============================================================
 
-step-6: run setup-k8s-kubectl-redhat.sh with out sudo privilege
+step-6: run setup-k8s-kubectl-redhat.sh as non-sudoer
 
 refer: setup-k8s-kubectl-redhat.sh
 
 ===============================================================
 
-step-7: get nodes information as non sudoer
+step-7: get nodes information as non-sudoer
 
 $ kubectl get nodes
 
 ===============================================================
 
-step-8: get pods namespace information as non sudoer
+step-8: get pods namespace information as non-sudoer
 
 $ kubectl get pods --all-namespaces
 
