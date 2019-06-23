@@ -38,4 +38,24 @@ refer: setup-k8s-kubectl-redhat.sh
 
 ===============================================================
 
+step-7: get nodes information as non sudoer
+
+$ kubectl get nodes
+
+===============================================================
+
+step-8: get pods namespace information as non sudoer
+
+$ kubectl get pods --all-namespaces
+
+===============================================================
+
+
+
+
+
+
+
+
+
 
