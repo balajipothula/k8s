@@ -27,7 +27,7 @@ yum -y install firewalld
 systemctl start firewalld
 
 # enabling firewalld service auto-start at system boot.
-systemctl enable firewalld
+systemctl enable --now firewalld
 
 # opening a ports.
 firewall-cmd --permanent --add-port=6443/tcp
