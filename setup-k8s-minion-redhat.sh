@@ -6,8 +6,8 @@
 
 # setting hostname.
 # note: please edit hostname according to your convinent.
-# eg: k8s-minion0, k8s-minion1, k8s-minion3, k8s-minion4
-# hostnamectl set-hostname 'k8s-minion0'
+# eg: k8s-minion-0 k8s-minion-1 k8s-minion-3 k8s-minion-4
+# hostnamectl set-hostname 'k8s-minion-0'
 
 # executing bash.
 # exec bash
