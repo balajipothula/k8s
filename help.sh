@@ -1,3 +1,6 @@
+kubectl --insecure-skip-tls-verify get nodes
+
+
 # removing weave net data db.
 sudo rm -rf /var/lib/weave/weave-netdata.db
 # removing weave pods.
