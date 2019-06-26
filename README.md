@@ -42,6 +42,6 @@ step-10:exec bash
 
 ===============================================================
 
-step-3: sudo vi /etc/hosts (refer: k8s-minion-hosts)
+step-11:sudo vi /etc/hosts (refer: k8s-minion-hosts)
 
 ===============================================================
