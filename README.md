@@ -22,10 +22,14 @@ step-5: sudo ./setup-k8s-master-redhat.sh
 
 ===============================================================
 
-step-6: sudo ./setup-k8s-kubectl-redhat.sh
+step-6: ./setup-k8s-kubectl-redhat.sh
 
 ===============================================================
 
-step-7: sudo ./setup-k8s-admin-dashboard-redhat.sh
+step-7: ./setup-k8s-weave-net-redhat.sh
+
+===============================================================
+
+step-8: ./setup-k8s-admin-dashboard-redhat.sh
 
 ===============================================================
