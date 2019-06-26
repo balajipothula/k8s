@@ -1,4 +1,9 @@
+    server: https://13.235.42.132:6443
+    insecure-skip-tls-verify: true
+
+
 kubectl --insecure-skip-tls-verify get nodes
+
 
 
 # removing weave net data db.
