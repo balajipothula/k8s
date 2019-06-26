@@ -13,5 +13,5 @@ step-10: sudo vi /etc/hosts    (refer: k8s-minion-hosts)
 step-11: sudo vi /etc/hostname (k8s-minion)  
 step-12: sudo ./setup-docker-redhat.sh  
 step-13: sudo usermod -a -G $USER  
-step-14: sudo reboot
+step-14: sudo reboot  
 step-15: sudo ./setup-k8s-minion-redhat.sh
