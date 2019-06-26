@@ -15,9 +15,3 @@ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 
 # changing ownership of config file to current user.
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
-
-# exporting kubectl version
-export kubever=$(kubectl version | base64 | tr -d '\n')
-
-# setting up coredns(dns servers).
-kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$kubever"
