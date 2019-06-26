@@ -2,15 +2,15 @@
 
 ===============================================================
 
-step-1: $ sudo hostnamectl set-hostname 'k8s-master' (set hostname)
+step-1: sudo hostnamectl set-hostname 'k8s-master' (set hostname)
 
 ===============================================================
 
-step-2: $ exec bash (execute bash)
+step-2: exec bash (execute bash)
 
 ===============================================================
 
-step-3: edit /etc/hosts (refer: k8s-master-hosts)
+step-3: sudo vi /etc/hosts (refer: k8s-master-hosts)
 
 ===============================================================
 
