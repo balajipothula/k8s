@@ -2,11 +2,11 @@
 
 ===============================================================
 
-step-1: sudo hostnamectl set-hostname 'k8s-master' (set hostname)
+step-1: sudo hostnamectl set-hostname 'k8s-master'
 
 ===============================================================
 
-step-2: exec bash (execute bash)
+step-2: exec bash
 
 ===============================================================
 
@@ -31,5 +31,17 @@ step-7: ./setup-k8s-weave-net-redhat.sh
 ===============================================================
 
 step-8: ./setup-k8s-admin-dashboard-redhat.sh
+
+===============================================================
+
+step-9: sudo hostnamectl set-hostname 'k8s-minion-0'
+
+===============================================================
+
+step-10:exec bash
+
+===============================================================
+
+step-3: sudo vi /etc/hosts (refer: k8s-minion-hosts)
 
 ===============================================================
