@@ -14,8 +14,8 @@ step-3: sudo vi /etc/hosts (refer: k8s-master-hosts)
 
 ===============================================================
 
-step-4: sudo ./setup-docker-redhat.sh
-        sudo usermod -a -G $USER
+step-4: sudo ./setup-docker-redhat.sh  
+        sudo usermod -a -G $USER  
         sudo reboot
         
 ===============================================================
@@ -48,8 +48,8 @@ step-11:sudo vi /etc/hosts (refer: k8s-minion-hosts)
 
 ===============================================================
 
-step-12:sudo ./setup-docker-redhat.sh
-        sudo usermod -a -G $USER
+step-12:sudo ./setup-docker-redhat.sh  
+        sudo usermod -a -G $USER  
         sudo reboot
         
 ===============================================================
