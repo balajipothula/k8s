@@ -1,5 +1,7 @@
 # k8s setup on rhel machine.
 
+step-00: sudo hostnamectl set-hostname k8s-master
+
 step-01: sudo vi /etc/hosts    (refer: k8s-master-hosts)  
 step-02: sudo vi /etc/hostname (k8s-master)  
 step-03: sudo ./setup-docker-redhat.sh  
