@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tomcat-deployment
+  labels:
+    app: tomcat
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: tomcat
+  template:
+    metadata:
+      labels:
+        app: tomcat
+    spec:
+      containers:
+      - name: tomcat
+        image: balajipothula/tomcat:8.5.42
+        volumeMounts:
+        - name: tomcat
+          mountPath: "/root/.tomcat"
+        ports:
+        - containerPort: 8080
+      volumes:
+      - name: tomcat
+        hostPath:
+          path: "/home/ec2-user/root/.tomcat"
+          type: Directory
