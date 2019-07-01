@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-deployment
+  labels:
+    app: jenkins
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: jenkins
+  template:
+    metadata:
+      labels:
+        app: jenkins
+    spec:
+      containers:
+      - name: tomcat
+        image: balajipothula/jenkins:2.176.1
+        volumeMounts:
+        - name: jenkins
+          mountPath: "/root/.tomcat"
+          mountPath: "/root/.jenkins"
+          mountPath: "/root/.m2"
+        ports:
+        - containerPort: 8080
+      volumes:
+      - name: jenkins
+        hostPath:
+          path: "/home/ec2-user/root/.tomcat"
+          type: Directory
+          path: "/home/ec2-user/root/.jenkins"
+          type: Directory
+          path: "/home/ec2-user/root/.m2"
+          type: Directory
