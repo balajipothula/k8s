@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: balajipothula/tomcat:8.5.42
+        image: balajipothula/tomcat:openjdk8-jre
         volumeMounts:
         - name: tomcat
           mountPath: "/root/.tomcat"
