@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: tomcat
-        image: balajipothula/jenkins:2.176.1
+        image: balajipothula/jenkins:openjdk8
         volumeMounts:
         - name: jenkins
           mountPath: "/root/.tomcat"
