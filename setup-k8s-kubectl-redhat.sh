@@ -4,7 +4,7 @@
 # Date        : 20 June 2019,
 # Description : Kubernetes kube setup on RHEL7.
 
-# Please run this script with non root user (with out sudo)
+# Please run this script as non root user (with out sudo)
 
 # creating .kube directory for current user (non root user)
 mkdir -p $HOME/.kube
