@@ -14,4 +14,4 @@ readonly PORT=8001
 readonly PEM=vpc0-subnet0-ec2.pem
 
 # accessing k8s-admin-dashboard.
-ssh -o ServerAliveInterval=60 -o ServerAliveCountMax=30 -o CheckHostIP=no -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i `pwd`/$PEM -L $PORT:$LOCALHOST:$PORT $USR@$HOST
+ssh -o ServerAliveInterval=60 -o ServerAliveCountMax=30 -o CheckHostIP=no -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i $(pwd)/$PEM -A -L $PORT:$LOCALHOST:$PORT $USR@$HOST
